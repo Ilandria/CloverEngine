@@ -7,18 +7,6 @@
     <ClCompile Include="Examples\Main.cpp">
       <Filter>Examples</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Handler\CDrawHandler.cpp">
-      <Filter>Source\Handler</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Handler\CKeyHandler.cpp">
-      <Filter>Source\Handler</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Handler\CMouseHandler.cpp">
-      <Filter>Source\Handler</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Handler\CUpdateHandler.cpp">
-      <Filter>Source\Handler</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Handler\WindowHandler.cpp">
       <Filter>Source\Handler</Filter>
     </ClCompile>
@@ -30,6 +18,18 @@
     </ClCompile>
     <ClCompile Include="Examples\DemoShader.cpp">
       <Filter>Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Handler\DrawHandler.cpp">
+      <Filter>Source\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Handler\KeyHandler.cpp">
+      <Filter>Source\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Handler\MouseHandler.cpp">
+      <Filter>Source\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Handler\UpdateHandler.cpp">
+      <Filter>Source\Handler</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

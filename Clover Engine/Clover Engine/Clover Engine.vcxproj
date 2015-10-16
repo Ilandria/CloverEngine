@@ -153,10 +153,10 @@
     <ClCompile Include="Examples\DemoShader.cpp" />
     <ClCompile Include="Examples\Main.cpp" />
     <ClCompile Include="Source\Core\CloverEngine.cpp" />
-    <ClCompile Include="Source\Handler\CDrawHandler.cpp" />
-    <ClCompile Include="Source\Handler\CKeyHandler.cpp" />
-    <ClCompile Include="Source\Handler\CMouseHandler.cpp" />
-    <ClCompile Include="Source\Handler\CUpdateHandler.cpp" />
+    <ClCompile Include="Source\Handler\DrawHandler.cpp" />
+    <ClCompile Include="Source\Handler\KeyHandler.cpp" />
+    <ClCompile Include="Source\Handler\MouseHandler.cpp" />
+    <ClCompile Include="Source\Handler\UpdateHandler.cpp" />
     <ClCompile Include="Source\Handler\WindowHandler.cpp" />
     <ClCompile Include="Source\IO\VirtualWindow.cpp" />
   </ItemGroup>
