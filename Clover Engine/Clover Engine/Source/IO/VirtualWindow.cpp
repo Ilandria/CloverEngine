@@ -67,7 +67,7 @@ void CVirtualWindow::Render()
 				while ((pixel & A_COLOR) != COLOR_PAIR(charInfo.m_Colour))
 				{
 					charInfo.m_Colour++;
-					if (charInfo.m_Colour == CE_NUM_COLOURS)
+					if (charInfo.m_Colour == CE_Colour_Total)
 					{
 						charInfo.m_Colour = -1;
 						break;
@@ -168,8 +168,4 @@ CShader* CVirtualWindow::RemoveShader()
 	CShader* previousShader = m_Shader;
 	m_Shader = NULL;
 	return previousShader;
-}
-
-void CVirtualWindow::SetBackgroundColour(EColours aColour)
-{
 }

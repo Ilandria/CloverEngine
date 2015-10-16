@@ -1,15 +1,32 @@
-﻿Build started 10/10/2015 12:55:44 .
-     1>Project "C:\Users\Charlotte\Desktop\Clover Engine\Clover Engine\Clover Engine.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/16/2015 18:34:10 .
+     1>Project "C:\Users\Charlotte\Desktop\CloverEngine\Clover Engine\Clover Engine\Clover Engine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Charlotte\Desktop\Clover Engine\Clover Engine\\" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\Clover Engine.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Charlotte\Desktop\CloverEngine\Clover Engine\Clover Engine\\" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\Clover Engine.pdb" /Gd /TP /analyze- /errorReport:prompt Examples\DemoGame.cpp Examples\DemoShader.cpp Examples\Main.cpp Source\Component\Handler\DrawHandler.cpp Source\Component\Handler\KeyHandler.cpp Source\Component\Handler\MouseHandler.cpp Source\Component\Handler\UpdateHandler.cpp Source\Component\Handler\WindowHandler.cpp Source\Core\CloverEngine.cpp Source\IO\VirtualWindow.cpp
+         DemoGame.cpp
+         DemoShader.cpp
          Main.cpp
+         DrawHandler.cpp
+         KeyHandler.cpp
+         MouseHandler.cpp
+         UpdateHandler.cpp
+         WindowHandler.cpp
+         CloverEngine.cpp
+         VirtualWindow.cpp
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\Charlotte\Desktop\Clover Engine\Release\Clover Engine.lib" /NOLOGO /LTCG Release\Main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\Users\Charlotte\Desktop\CloverEngine\Clover Engine\Release\Clover Engine.lib" /NOLOGO /LTCG Release\DemoGame.obj
+         Release\DemoShader.obj
+         Release\Main.obj
+         Release\DrawHandler.obj
+         Release\KeyHandler.obj
+         Release\MouseHandler.obj
+         Release\UpdateHandler.obj
+         Release\WindowHandler.obj
          Release\CloverEngine.obj
+         Release\VirtualWindow.obj
          PDCurses\Libraries\pdcurses.lib
-         Clover Engine.vcxproj -> C:\Users\Charlotte\Desktop\Clover Engine\Release\Clover Engine.lib
-     1>Done Building Project "C:\Users\Charlotte\Desktop\Clover Engine\Clover Engine\Clover Engine.vcxproj" (Build target(s)).
+         Clover Engine.vcxproj -> C:\Users\Charlotte\Desktop\CloverEngine\Clover Engine\Release\Clover Engine.lib
+     1>Done Building Project "C:\Users\Charlotte\Desktop\CloverEngine\Clover Engine\Clover Engine\Clover Engine.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.80
+Time Elapsed 00:00:14.46

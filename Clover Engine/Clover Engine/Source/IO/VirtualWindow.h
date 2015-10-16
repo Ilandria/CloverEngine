@@ -12,8 +12,8 @@ Website:	http://charlottebrown.ca/
 #ifndef __VIRTUALWINDOW_H
 #define __VIRTUALWINDOW_H
 
-#include "Source\Handler\WindowHandler.h"
-#include "Source\Handler\UpdateHandler.h"
+#include "Source\Component\Handler\WindowHandler.h"
+#include "Source\Component\Handler\UpdateHandler.h"
 #include "Source\IO\Colours.h"
 #include "PDCurses\Include\curses.h"
 #include <string>
@@ -83,9 +83,6 @@ namespace CloverEngine
 
 		// Stops using whatever shader the window was using, then returns a pointer to it.
 		CShader* RemoveShader();
-
-		// Sets the default window colour to the given colour pair.
-		void SetBackgroundColour(EColours aColour);
 	};
 }
 

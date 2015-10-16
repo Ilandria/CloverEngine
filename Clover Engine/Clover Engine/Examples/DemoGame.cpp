@@ -37,9 +37,6 @@ void CDemoGame::InitializeGame()
 
 	// Tell the window that we want to use this shader.
 	m_Window->UseShader(m_Shader);
-
-	// Set a background colour for the window.
-	m_Window->SetBackgroundColour(CE_COLOUR_KW);
 }
 
 void CDemoGame::ShutdownGame()
@@ -73,9 +70,9 @@ void CDemoGame::Draw()
 
 	// Draw to the window. This uses PDCurses lingo, so look there for documentation. Look at Colours.h for available colour pairs.
 	wattron(win, A_BOLD);
-	wattron(win, COLOR_PAIR(CE_COLOUR_WK));
+	wattron(win, COLOR_PAIR(CE_Colour_WK));
 	wborder(win, 0, 0, 0, 0, 0, 0, 0, 0);
 	mvwaddch(win, CCloverEngine::GetInstance()->GetLastMouseEvent().m_Y, CCloverEngine::GetInstance()->GetLastMouseEvent().m_X, ACS_DIAMOND);
-	wattroff(win, COLOR_PAIR(CE_COLOUR_WK));
+	wattroff(win, COLOR_PAIR(CE_Colour_WK));
 	wattroff(win, A_BOLD);
 }

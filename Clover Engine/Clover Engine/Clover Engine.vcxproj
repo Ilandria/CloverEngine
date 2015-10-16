@@ -152,12 +152,12 @@
     <ClCompile Include="Examples\DemoGame.cpp" />
     <ClCompile Include="Examples\DemoShader.cpp" />
     <ClCompile Include="Examples\Main.cpp" />
+    <ClCompile Include="Source\Component\Handler\DrawHandler.cpp" />
+    <ClCompile Include="Source\Component\Handler\KeyHandler.cpp" />
+    <ClCompile Include="Source\Component\Handler\MouseHandler.cpp" />
+    <ClCompile Include="Source\Component\Handler\UpdateHandler.cpp" />
+    <ClCompile Include="Source\Component\Handler\WindowHandler.cpp" />
     <ClCompile Include="Source\Core\CloverEngine.cpp" />
-    <ClCompile Include="Source\Handler\DrawHandler.cpp" />
-    <ClCompile Include="Source\Handler\KeyHandler.cpp" />
-    <ClCompile Include="Source\Handler\MouseHandler.cpp" />
-    <ClCompile Include="Source\Handler\UpdateHandler.cpp" />
-    <ClCompile Include="Source\Handler\WindowHandler.cpp" />
     <ClCompile Include="Source\IO\VirtualWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -168,13 +168,14 @@
     <ClInclude Include="Examples\DemoShader.h" />
     <ClInclude Include="PDCurses\Include\curses.h" />
     <ClInclude Include="PDCurses\Include\panel.h" />
+    <ClInclude Include="Source\Component\Component.h" />
+    <ClInclude Include="Source\Component\Handler\DrawHandler.h" />
+    <ClInclude Include="Source\Component\Handler\KeyHandler.h" />
+    <ClInclude Include="Source\Component\Handler\MouseHandler.h" />
+    <ClInclude Include="Source\Component\Handler\UpdateHandler.h" />
+    <ClInclude Include="Source\Component\Handler\WindowHandler.h" />
     <ClInclude Include="Source\Core\CloverEngine.h" />
     <ClInclude Include="Source\Core\CloverGame.h" />
-    <ClInclude Include="Source\Handler\DrawHandler.h" />
-    <ClInclude Include="Source\Handler\KeyHandler.h" />
-    <ClInclude Include="Source\Handler\MouseHandler.h" />
-    <ClInclude Include="Source\Handler\UpdateHandler.h" />
-    <ClInclude Include="Source\Handler\WindowHandler.h" />
     <ClInclude Include="Source\IO\Colours.h" />
     <ClInclude Include="Source\IO\InputTypes.h" />
     <ClInclude Include="Source\IO\Shader.h" />

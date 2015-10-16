@@ -13,10 +13,10 @@ Website:	http://charlottebrown.ca/
 #define __DEMOGAME_H
 
 #include "Source\Core\CloverGame.h"
-#include "Source\Handler\UpdateHandler.h"
-#include "Source\Handler\KeyHandler.h"
-#include "Source\Handler\MouseHandler.h"
-#include "Source\Handler\DrawHandler.h"
+#include "Source\Component\Handler\UpdateHandler.h"
+#include "Source\Component\Handler\KeyHandler.h"
+#include "Source\Component\Handler\MouseHandler.h"
+#include "Source\Component\Handler\DrawHandler.h"
 #include "Source\IO\VirtualWindow.h"
 #include <string>
 
