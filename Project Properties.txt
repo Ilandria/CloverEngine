@@ -1,0 +1,5 @@
+Build target: x86
+
+Include directory: $(ProjectDir)
+Linker directory: $(ProjectDir)\PDCurses\Libraries
+Dependencies: pdcurses.lib

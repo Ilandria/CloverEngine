@@ -8,3 +8,6 @@ Charlotte Clover Brown |
 [Twitch](http://www.twitch.tv/ilandria) | 
 [Youtube](https://www.youtube.com/user/oOSharsharOo) | 
 [Contact](charlotte.clover.brown@gmail.com) |
+
+# Note
+Be sure to set up your project with the properties listed in Project Properties.txt
