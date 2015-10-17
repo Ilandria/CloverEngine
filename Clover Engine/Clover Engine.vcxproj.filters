@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Core\CloverEngine.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\Main.cpp">
+      <Filter>Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IO\VirtualWindow.cpp">
+      <Filter>Source\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\DemoGame.cpp">
+      <Filter>Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\DemoShader.cpp">
+      <Filter>Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Handler\DrawHandler.cpp">
+      <Filter>Source\Component\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Handler\KeyHandler.cpp">
+      <Filter>Source\Component\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Handler\MouseHandler.cpp">
+      <Filter>Source\Component\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Handler\UpdateHandler.cpp">
+      <Filter>Source\Component\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Component\Handler\WindowHandler.cpp">
+      <Filter>Source\Component\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\GameObject.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pdcurses.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PDCurses\Include\curses.h">
+      <Filter>PDCurses\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="PDCurses\Include\panel.h">
+      <Filter>PDCurses\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\CloverEngine.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IO\InputTypes.h">
+      <Filter>Source\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IO\Colours.h">
+      <Filter>Source\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\CloverGame.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Examples\DemoGame.h">
+      <Filter>Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IO\VirtualWindow.h">
+      <Filter>Source\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IO\Shader.h">
+      <Filter>Source\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Examples\DemoShader.h">
+      <Filter>Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Component.h">
+      <Filter>Source\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Handler\DrawHandler.h">
+      <Filter>Source\Component\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Handler\KeyHandler.h">
+      <Filter>Source\Component\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Handler\MouseHandler.h">
+      <Filter>Source\Component\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Handler\UpdateHandler.h">
+      <Filter>Source\Component\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Handler\WindowHandler.h">
+      <Filter>Source\Component\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\GameObject.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Transform.h">
+      <Filter>Source\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\DrawBuffer.h">
+      <Filter>Source\Component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PDCurses">
+      <UniqueIdentifier>{85b03ac6-2bbc-420a-b690-cf51a61e1019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDCurses\Libraries">
+      <UniqueIdentifier>{efd094d6-27f7-4597-b974-b23b6ffef718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDCurses\Include">
+      <UniqueIdentifier>{8bf17eb3-e8fc-4b5c-a372-f1f7bba2effc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{c0946aca-6ae8-4822-916d-c42556b7c839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{b748cdf1-c089-4528-927b-51bd4b2d12ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IO">
+      <UniqueIdentifier>{3b43c2c2-323a-4ad9-9d55-342ea2b5cfd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Examples">
+      <UniqueIdentifier>{bf5ced37-f2b4-4f8c-afd5-e13141de6790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Component">
+      <UniqueIdentifier>{a20c7492-d0c5-4d79-adbf-d9a267687718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Component\Handler">
+      <UniqueIdentifier>{109756b6-edd1-4827-bc45-b7e0a3d60261}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="PDCurses\Libraries\pdcurses.lib">
+      <Filter>PDCurses\Libraries</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
