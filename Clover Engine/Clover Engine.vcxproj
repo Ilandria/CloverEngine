@@ -160,6 +160,7 @@
     <ClCompile Include="Source\Component\Handler\MouseHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\UpdateHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\WindowHandler.cpp" />
+    <ClCompile Include="Source\Component\Transform.cpp" />
     <ClCompile Include="Source\Core\CloverEngine.cpp" />
     <ClCompile Include="Source\Core\GameObject.cpp" />
     <ClCompile Include="Source\IO\VirtualWindow.cpp" />
@@ -187,6 +188,7 @@
     <ClInclude Include="Source\IO\InputTypes.h" />
     <ClInclude Include="Source\IO\Shader.h" />
     <ClInclude Include="Source\IO\VirtualWindow.h" />
+    <ClInclude Include="Source\Math\MathTypes.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="PDCurses\Libraries\pdcurses.lib" />

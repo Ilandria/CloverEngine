@@ -27,6 +27,7 @@ Website:	http://charlottebrown.ca/
 #include "Source\IO\InputTypes.h"
 #include "Source\IO\Colours.h"
 #include "Source\Core\CloverGame.h"
+#include "Source\Math\MathTypes.h"
 #include "Source\Component\Component.h"
 #include "Source\Core\GameObject.h"
 #include "Source\Component\Transform.h"

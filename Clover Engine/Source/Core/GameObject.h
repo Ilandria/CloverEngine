@@ -39,6 +39,7 @@ namespace CloverEngine
 		CDrawBuffer* m_DrawBuffer;
 
 	public:
+		// TODO: Finish implementing GameObject.
 		CGameObject();
 		virtual ~CGameObject();
 	};

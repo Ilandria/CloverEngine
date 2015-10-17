@@ -34,6 +34,9 @@
     <ClCompile Include="Source\Core\GameObject.cpp">
       <Filter>Source\Core</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Component\Transform.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="pdcurses.dll" />
@@ -96,6 +99,9 @@
     <ClInclude Include="Source\Component\DrawBuffer.h">
       <Filter>Source\Component</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Math\MathTypes.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="PDCurses">
@@ -124,6 +130,9 @@
     </Filter>
     <Filter Include="Source\Component\Handler">
       <UniqueIdentifier>{109756b6-edd1-4827-bc45-b7e0a3d60261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math">
+      <UniqueIdentifier>{fc55b5e2-22de-4fe1-b4df-b86a3ec8c954}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
