@@ -31,6 +31,9 @@
     <ClCompile Include="Source\Component\Handler\WindowHandler.cpp">
       <Filter>Source\Component\Handler</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Core\GameObject.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="pdcurses.dll" />
@@ -83,6 +86,15 @@
     </ClInclude>
     <ClInclude Include="Source\Component\Handler\WindowHandler.h">
       <Filter>Source\Component\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\GameObject.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Transform.h">
+      <Filter>Source\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\DrawBuffer.h">
+      <Filter>Source\Component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

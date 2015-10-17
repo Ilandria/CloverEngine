@@ -158,6 +158,7 @@
     <ClCompile Include="Source\Component\Handler\UpdateHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\WindowHandler.cpp" />
     <ClCompile Include="Source\Core\CloverEngine.cpp" />
+    <ClCompile Include="Source\Core\GameObject.cpp" />
     <ClCompile Include="Source\IO\VirtualWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,13 +170,16 @@
     <ClInclude Include="PDCurses\Include\curses.h" />
     <ClInclude Include="PDCurses\Include\panel.h" />
     <ClInclude Include="Source\Component\Component.h" />
+    <ClInclude Include="Source\Component\DrawBuffer.h" />
     <ClInclude Include="Source\Component\Handler\DrawHandler.h" />
     <ClInclude Include="Source\Component\Handler\KeyHandler.h" />
     <ClInclude Include="Source\Component\Handler\MouseHandler.h" />
     <ClInclude Include="Source\Component\Handler\UpdateHandler.h" />
     <ClInclude Include="Source\Component\Handler\WindowHandler.h" />
+    <ClInclude Include="Source\Component\Transform.h" />
     <ClInclude Include="Source\Core\CloverEngine.h" />
     <ClInclude Include="Source\Core\CloverGame.h" />
+    <ClInclude Include="Source\Core\GameObject.h" />
     <ClInclude Include="Source\IO\Colours.h" />
     <ClInclude Include="Source\IO\InputTypes.h" />
     <ClInclude Include="Source\IO\Shader.h" />

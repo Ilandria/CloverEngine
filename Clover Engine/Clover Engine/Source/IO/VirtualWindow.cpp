@@ -15,7 +15,7 @@ using namespace std;
 using namespace CloverEngine;
 
 CVirtualWindow::CVirtualWindow(string aName, int aX, int aY, unsigned int aWidth, unsigned int aHeight, bool aEnabled) :
-	m_Name(aName), m_X(aX), m_Y(aY), m_Width(aWidth), m_Height(aHeight), m_Enabled(aEnabled), m_Shader(NULL)
+	m_Name(aName), m_X(aX), m_Y(aY), m_Width(aWidth), m_Height(aHeight), m_Enabled(aEnabled), m_Shader(nullptr)
 {
 	// Check if we're setting height to the full console height.
 	if (m_Height == 0)
@@ -40,7 +40,7 @@ CVirtualWindow::~CVirtualWindow()
 
 void CVirtualWindow::Render()
 {
-	if (m_Shader != NULL)
+	if (m_Shader != nullptr)
 	{
 		// Memory for each pixel.
 		SCharInfo** pixels = new SCharInfo*[m_Height];
@@ -157,7 +157,7 @@ void CVirtualWindow::Clear()
 
 void CVirtualWindow::UseShader(CShader* aShader)
 {
-	if (aShader != NULL)
+	if (aShader != nullptr)
 	{
 		m_Shader = aShader;
 	}
@@ -166,6 +166,6 @@ void CVirtualWindow::UseShader(CShader* aShader)
 CShader* CVirtualWindow::RemoveShader()
 {
 	CShader* previousShader = m_Shader;
-	m_Shader = NULL;
+	m_Shader = nullptr;
 	return previousShader;
 }

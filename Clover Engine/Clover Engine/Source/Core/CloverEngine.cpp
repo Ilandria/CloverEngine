@@ -14,9 +14,9 @@ Website:	http://charlottebrown.ca/
 using namespace std;
 using namespace CloverEngine;
 
-CCloverEngine* CCloverEngine::m_Instance = NULL;
+CCloverEngine* CCloverEngine::m_Instance = nullptr;
 
-CCloverEngine::CCloverEngine() : m_Quit(false), m_DeltaTime(0), m_Running(false), m_Game(NULL)
+CCloverEngine::CCloverEngine() : m_Quit(false), m_DeltaTime(0), m_Running(false), m_Game(nullptr)
 {
 	// Initial memory allocation to avoid instantly having to resize handler storage on launch
 	m_UpdateHandlers.reserve(8);
@@ -32,7 +32,7 @@ CCloverEngine::~CCloverEngine()
 
 CCloverEngine* CCloverEngine::GetInstance()
 {
-	if (m_Instance == NULL)
+	if (m_Instance == nullptr)
 	{
 		m_Instance = new CCloverEngine();
 	}
@@ -43,7 +43,7 @@ CCloverEngine* CCloverEngine::GetInstance()
 void CCloverEngine::Run(CCloverGame* aGame)
 {
 	// Quick check to make sure this is only called once, and that we have a valid game.
-	if (m_Running || aGame == NULL)
+	if (m_Running || aGame == nullptr)
 	{
 		return;
 	}
@@ -67,7 +67,7 @@ void CCloverEngine::Run(CCloverGame* aGame)
 	HANDLE hStdIn = GetStdHandle(STD_INPUT_HANDLE);
 
 	// Array of recorded inputs.
-	INPUT_RECORD* inputBuffer = NULL;
+	INPUT_RECORD* inputBuffer = nullptr;
 
 	// Number of input events in the buffer.
 	DWORD numInputs = 0;
@@ -435,7 +435,7 @@ void CCloverEngine::Draw()
 void CCloverEngine::RegisterUpdateHandler(CUpdateHandler* aHandler)
 {
 	// Make sure the handler is valid
-	if (aHandler == NULL)
+	if (aHandler == nullptr)
 	{
 		return;
 	}
@@ -457,7 +457,7 @@ void CCloverEngine::RegisterUpdateHandler(CUpdateHandler* aHandler)
 void CCloverEngine::RegisterMouseHandler(CMouseHandler* aHandler)
 {
 	// Make sure the handler is valid
-	if (aHandler == NULL)
+	if (aHandler == nullptr)
 	{
 		return;
 	}
@@ -479,7 +479,7 @@ void CCloverEngine::RegisterMouseHandler(CMouseHandler* aHandler)
 void CCloverEngine::RegisterKeyHandler(CKeyHandler* aHandler)
 {
 	// Make sure the handler is valid
-	if (aHandler == NULL)
+	if (aHandler == nullptr)
 	{
 		return;
 	}
@@ -501,7 +501,7 @@ void CCloverEngine::RegisterKeyHandler(CKeyHandler* aHandler)
 void CCloverEngine::RegisterDrawHandler(CDrawHandler* aHandler)
 {
 	// Make sure the handler is valid
-	if (aHandler == NULL)
+	if (aHandler == nullptr)
 	{
 		return;
 	}
@@ -523,7 +523,7 @@ void CCloverEngine::RegisterDrawHandler(CDrawHandler* aHandler)
 void CCloverEngine::RegisterWindowHandler(CWindowHandler* aHandler)
 {
 	// Make sure the handler is valid
-	if (aHandler == NULL)
+	if (aHandler == nullptr)
 	{
 		return;
 	}
