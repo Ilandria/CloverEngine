@@ -35,7 +35,6 @@ namespace CloverEngine
 		CTransform* m_Transform;
 
 	public:
-		// TODO: Finish implementing GameObject.
 		CGameObject();
 		virtual ~CGameObject();
 

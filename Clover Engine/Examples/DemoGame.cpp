@@ -37,6 +37,13 @@ void CDemoGame::InitializeGame()
 
 	// Tell the window that we want to use this shader.
 	m_Window->UseShader(m_Shader);
+
+	// TODO: Delete this
+	CGameObject* gameObject = new CGameObject();
+	CSimpleSprite* simpleSprite = new CSimpleSprite(gameObject);
+	simpleSprite->SetName("Test Sprite");
+	simpleSprite->SetSprite(chtype('O' | A_BOLD | COLOR_PAIR(CE_Colour_YK)));
+	gameObject->AddComponent(simpleSprite);
 }
 
 void CDemoGame::ShutdownGame()

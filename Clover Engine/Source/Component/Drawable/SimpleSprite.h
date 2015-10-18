@@ -28,7 +28,9 @@ namespace CloverEngine
 		// Kill things here if things need to be killed.
 		virtual ~CSimpleSprite();
 
-		// Sets the sprite's display.
+		/* Sets the sprite's display. This uses an NCurses chtype for character, colour and
+		other attributes. Read up on it if you don't know what is available to you, passing
+		in 'X' | A_BOLD | COLOR_PAIR(CE_Colour_WK) would draw a bright white-on-black X.*/
 		virtual void SetSprite(chtype aCharacter);
 	};
 }
