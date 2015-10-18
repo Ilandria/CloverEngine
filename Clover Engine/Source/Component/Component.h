@@ -12,6 +12,8 @@ Website:	http://charlottebrown.ca/
 #ifndef __COMPONENT_H
 #define __COMPONENT_H
 
+#include <string>
+
 namespace CloverEngine
 {
 	// What kind of component this is. Used for object type casting. Make sure you're right!
@@ -38,6 +40,9 @@ namespace CloverEngine
 		// The object that owns this one.
 		CGameObject* m_Owner;
 
+		// An identifier for this specific component. Used for reference.
+		std::string m_Name;
+
 	public:
 		// All components know who their owner is.
 		CComponent(CGameObject* aOwner);
@@ -53,6 +58,12 @@ namespace CloverEngine
 		have easy reference to the engine's built-in types.
 		*/
 		virtual bool IsType(const int& aType) const;
+
+		// Sets the name of this component. Used for reference.
+		void SetName(const std::string& aName);
+
+		// Gets the name of this component. Used for reference.
+		std::string GetName() const;
 	};
 }
 

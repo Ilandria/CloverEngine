@@ -11,10 +11,13 @@ Website:	http://charlottebrown.ca/
 
 #include "Source\Core\CloverEngine.h"
 
+using namespace std;
 using namespace CloverEngine;
 
 CComponent::CComponent(CGameObject* aOwner) : m_Owner(aOwner)
 {
+	// Initialize this component's name.
+	m_Name = "";
 }
 
 CComponent::~CComponent()
@@ -24,4 +27,14 @@ CComponent::~CComponent()
 bool CComponent::IsType(const int& aType) const
 {
 	return aType == CE_ComponentType_Invalid;
+}
+
+void CComponent::SetName(const string& aName)
+{
+	m_Name = aName;
+}
+
+string CComponent::GetName() const
+{
+	return m_Name;
 }

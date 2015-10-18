@@ -26,8 +26,8 @@ namespace CloverEngine
 	{
 	private:
 		// Current x position.
-		SVector2<double>* m_Position;
-		SVector2<double>* m_Size;
+		SVector2<double> m_Position;
+		SVector2<double> m_Size;
 
 	public:
 		// All components know who their owner is.
@@ -49,7 +49,7 @@ namespace CloverEngine
 		double GetY() const;
 
 		// Get the current position.
-		const SVector2<double>* GetPosition() const;
+		const SVector2<double> GetPosition() const;
 
 		// Get the current width.
 		double GetWidth() const;
@@ -58,7 +58,7 @@ namespace CloverEngine
 		double GetHeight() const;
 
 		// Get the current size.
-		const SVector2<double>* GetSize() const;
+		const SVector2<double> GetSize() const;
 
 		// Set the current x position.
 		void SetX(const double& aX);
