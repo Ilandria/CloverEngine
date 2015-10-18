@@ -51,7 +51,10 @@ namespace CloverEngine
 		void NewBuffer(const int& aWidth, const int& aHeight);
 
 		// Gets the buffer's draw window, width, and height.
-		void GetBufferInfo(WINDOW* aWindow, int* aWidth, int* aHeight);
+		void GetDrawInfo(WINDOW* aWindow, int* aWidth, int* aHeight);
+
+		// Erases the buffer's contents, does not delete or resize the buffer.
+		void Erase();
 	};
 }
 

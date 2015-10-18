@@ -40,8 +40,8 @@
     <ClCompile Include="Source\Component\Component.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Component\Drawable.cpp">
-      <Filter>Source\Component</Filter>
+    <ClCompile Include="Source\Component\Drawable\Drawable.cpp">
+      <Filter>Source\Component\Drawable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -105,8 +105,8 @@
     <ClInclude Include="Source\Math\MathTypes.h">
       <Filter>Source\Math</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Component\Drawable.h">
-      <Filter>Source\Component</Filter>
+    <ClInclude Include="Source\Component\Drawable\Drawable.h">
+      <Filter>Source\Component\Drawable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +139,9 @@
     </Filter>
     <Filter Include="Source\Math">
       <UniqueIdentifier>{fc55b5e2-22de-4fe1-b4df-b86a3ec8c954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Component\Drawable">
+      <UniqueIdentifier>{ac979eb9-7e00-4a3e-ad68-1b243b3398a7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

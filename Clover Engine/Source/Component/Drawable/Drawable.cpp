@@ -26,7 +26,7 @@ CDrawable::CDrawable(CGameObject* aOwner) : CComponent(aOwner), m_Buffer(nullptr
 CDrawable::~CDrawable()
 {
 	// Clear the buffer and delete it.
-	wclear(m_Buffer);
+	werase(m_Buffer);
 	delwin(m_Buffer);
 }
 
@@ -38,7 +38,7 @@ bool CDrawable::IsType(const int& aType) const
 void CDrawable::NewBuffer(const int& aWidth, const int& aHeight)
 {
 	// Clear and delete the previous buffer.
-	wclear(m_Buffer);
+	werase(m_Buffer);
 	delwin(m_Buffer);
 	m_Buffer = nullptr;
 
@@ -50,9 +50,14 @@ void CDrawable::NewBuffer(const int& aWidth, const int& aHeight)
 	m_Buffer = newwin(m_Size.m_Y, m_Size.m_X, 0, 0);
 }
 
-void CDrawable::GetBufferInfo(WINDOW* aWindow, int* aWidth, int* aHeight)
+void CDrawable::GetDrawInfo(WINDOW* aWindow, int* aWidth, int* aHeight)
 {
 	aWindow = m_Buffer;
 	*aWidth = m_Size.m_X;
 	*aHeight = m_Size.m_Y;
+}
+
+void CDrawable::Erase()
+{
+	werase(m_Buffer);
 }
