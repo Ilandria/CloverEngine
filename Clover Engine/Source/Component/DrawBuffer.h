@@ -28,16 +28,16 @@ namespace CloverEngine
 
 	public:
 		// All components know who their owner is.
-		CDrawBuffer(CGameObject* aOwner) : CComponent(aOwner) { }
+		CDrawBuffer(CGameObject* aOwner);
 
 		// Kill things here if things need to be killed.
-		virtual ~CDrawBuffer() { }
+		virtual ~CDrawBuffer();
 
 		/*
 		For any component you create, override this method and make it return true for every type
 		of component that it is.
 		*/
-		virtual bool IsType(const int& aType) const { return aType == CE_ComponentType_DrawBuffer; }
+		virtual bool IsType(const int& aType) const;
 	};
 }
 

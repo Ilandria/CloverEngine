@@ -156,6 +156,7 @@
     <ClCompile Include="Examples\DemoShader.cpp" />
     <ClCompile Include="Examples\Main.cpp" />
     <ClCompile Include="Source\Component\Component.cpp" />
+    <ClCompile Include="Source\Component\DrawBuffer.cpp" />
     <ClCompile Include="Source\Component\Handler\DrawHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\KeyHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\MouseHandler.cpp" />

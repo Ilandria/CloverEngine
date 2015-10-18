@@ -40,6 +40,9 @@
     <ClCompile Include="Source\Component\Component.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Component\DrawBuffer.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="pdcurses.dll" />
