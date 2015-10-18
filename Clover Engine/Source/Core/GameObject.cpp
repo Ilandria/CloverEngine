@@ -13,16 +13,13 @@ Website:	http://charlottebrown.ca/
 
 using namespace CloverEngine;
 
-CGameObject::CGameObject() : m_Transform(nullptr), m_DrawBuffer(nullptr)
+CGameObject::CGameObject() : m_Transform(nullptr)
 {
 	// Initialize this object's transform and draw buffer.
 	m_Transform = new CTransform(this);
-	m_DrawBuffer = new CDrawBuffer(this);
 
 	// Add the components to the list.
-	m_Components.reserve(2);
 	m_Components.push_back(m_Transform);
-	m_Components.push_back(m_DrawBuffer);
 }
 
 CGameObject::~CGameObject()

@@ -26,7 +26,7 @@ namespace CloverEngine
 	all of the Components that make them up as well as manage adding, removing, and deleting those
 	components. All GameObjects always have exactly 1 transform and 1 draw buffer.
 	*/
-	class CGameObject
+	class CGameObject final
 	{
 	private:
 		// All of the components that currently make up this game object, including those listed below.
@@ -34,9 +34,6 @@ namespace CloverEngine
 
 		// This GameObject's transform component, for quick reference.
 		CTransform* m_Transform;
-
-		// This GameObject's draw buffer component, for quick reference.
-		CDrawBuffer* m_DrawBuffer;
 
 	public:
 		// TODO: Finish implementing GameObject.
