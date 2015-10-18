@@ -1,16 +1,16 @@
 /*
-DrawBuffer
+Drawable
 
-Component that stores information to be drawn to the screen at a later time.
+Any component that wishes to be drawn to the screen needs to extend this
 
 Creator:	Charlotte C. Brown
-File Date:	October 16th, 2015
+File Date:	October 18th, 2015
 Contact:	charlotte.clover.brown@gmail.com
 Website:	http://charlottebrown.ca/
 */
 
-#ifndef __DRAWBUFFER_H
-#define __DRAWBUFFER_H
+#ifndef __DRAWABLE_H
+#define __DRAWABLE_H
 
 #include "Source\Component\Component.h"
 #include "PDCurses\Include\curses.h"
@@ -19,11 +19,13 @@ Website:	http://charlottebrown.ca/
 namespace CloverEngine
 {
 	/*
-	A GameObject, Sprite, Camera, etc.'s display is stored in a DrawBuffer prior to being rendered
-	on the actual console window. This allows for easily pushing around and manipulating the
-	final image without having to direct access any classes.
+	This is the base class for any component that is to be drawn to the screen. Draw info is stored
+	in a temporary and invisible buffer that is taken by scenes cameras and drawn on the window. Make
+	sure you properly override IsType to return true for Drawable and any other types your child
+	class is. The default buffer size is 1x1 (a single char), so be sure to call NewBuffer() if that
+	is not the size you wish to have.
 	*/
-	class CDrawBuffer : public CComponent
+	class CDrawable : public CComponent
 	{
 	private:
 		// This DrawBuffer's buffer window.
@@ -34,10 +36,10 @@ namespace CloverEngine
 
 	public:
 		// All components know who their owner is.
-		CDrawBuffer(CGameObject* aOwner);
+		CDrawable(CGameObject* aOwner);
 
 		// Kill things here if things need to be killed.
-		virtual ~CDrawBuffer();
+		virtual ~CDrawable();
 
 		/*
 		For any component you create, override this method and make it return true for every type
@@ -45,8 +47,8 @@ namespace CloverEngine
 		*/
 		virtual bool IsType(const int& aType) const;
 
-		// Clears the buffer and resets its size.
-		void RefreshBuffer();
+		// Clears the buffer and sets its size.
+		void NewBuffer(const int& aWidth, const int& aHeight);
 
 		// Gets the buffer's draw window, width, and height.
 		void GetBufferInfo(WINDOW* aWindow, int* aWidth, int* aHeight);

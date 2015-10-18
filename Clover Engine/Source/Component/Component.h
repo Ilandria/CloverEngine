@@ -20,8 +20,8 @@ namespace CloverEngine
 	enum EComponentTypes
 	{
 		CE_ComponentType_Invalid = 0,
-		CE_ComponentType_DrawBuffer,
 		CE_ComponentType_Transform,
+		CE_ComponentType_Drawable,
 		CE_ComponentType_LastIndex
 	};
 

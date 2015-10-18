@@ -31,7 +31,7 @@ Website:	http://charlottebrown.ca/
 #include "Source\Component\Component.h"
 #include "Source\Core\GameObject.h"
 #include "Source\Component\Transform.h"
-#include "Source\Component\DrawBuffer.h"
+#include "Source\Component\Drawable.h"
 #include "Source\Component\Handler\KeyHandler.h"
 #include "Source\Component\Handler\MouseHandler.h"
 #include "Source\Component\Handler\UpdateHandler.h"

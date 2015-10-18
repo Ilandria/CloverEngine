@@ -40,7 +40,7 @@
     <ClCompile Include="Source\Component\Component.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Component\DrawBuffer.cpp">
+    <ClCompile Include="Source\Component\Drawable.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
   </ItemGroup>
@@ -102,11 +102,11 @@
     <ClInclude Include="Source\Component\Transform.h">
       <Filter>Source\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Component\DrawBuffer.h">
-      <Filter>Source\Component</Filter>
-    </ClInclude>
     <ClInclude Include="Source\Math\MathTypes.h">
       <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Drawable.h">
+      <Filter>Source\Component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
