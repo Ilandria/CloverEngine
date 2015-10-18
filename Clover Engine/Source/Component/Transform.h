@@ -40,61 +40,61 @@ namespace CloverEngine
 		For any component you create, override this method and make it return true for every type
 		of component that it is.
 		*/
-		virtual bool IsType(const int& aType) const { return aType == CE_ComponentType_Transform; }
+		virtual bool IsType(const int& aType) const;
 
 		// Get the current x position.
-		double GetX() const { return m_Position->m_X; }
+		double GetX() const;
 
 		// Get the current y position.
-		double GetY() const { return m_Position->m_Y; }
+		double GetY() const;
 
 		// Get the current position.
-		const SVector2<double>* GetPosition() const { return m_Position; }
+		const SVector2<double>* GetPosition() const;
 
 		// Get the current width.
-		double GetWidth() const { return m_Size->m_X; }
+		double GetWidth() const;
 
 		// Get the current height.
-		double GetHeight() const { return m_Size->m_Y; }
+		double GetHeight() const;
 
 		// Get the current size.
-		const SVector2<double>* GetSize() const { return m_Size; }
+		const SVector2<double>* GetSize() const;
 
 		// Set the current x position.
-		void SetX(const double& aX) { m_Position->m_X = aX; }
+		void SetX(const double& aX);
 
 		// Set the current y position.
-		void SetY(const double& aY) { m_Position->m_Y = aY; }
+		void SetY(const double& aY);
 
 		// Set the current position.
-		void SetPosition(const double& aX, const double& aY) { m_Position->m_X = aX; m_Position->m_Y = aY; }
+		void SetPosition(const double& aX, const double& aY);
 
 		// Set the current position.
-		void SetPosition(const SVector2<double>& aPosition) { m_Position->m_X = aPosition.m_X; m_Position->m_Y = aPosition.m_Y; }
+		void SetPosition(const SVector2<double>& aPosition);
 
 		// Set the current width.
-		void SetWidth(const double& aWidth) { m_Size->m_X = aWidth; }
+		void SetWidth(const double& aWidth);
 
 		// Set the current height.
-		void SetHeight(const double& aHeight) { m_Size->m_Y = aHeight; }
+		void SetHeight(const double& aHeight);
 
 		// Set the current size.
-		void SetSize(const double& aWidth, const double& aHeight) { m_Size->m_X = aWidth; m_Size->m_Y = aHeight; }
+		void SetSize(const double& aWidth, const double& aHeight);
 
 		// Set the current size.
-		void SetSize(const SVector2<double>& aSize) { m_Size->m_X = aSize.m_X; m_Size->m_Y = aSize.m_Y; }
+		void SetSize(const SVector2<double>& aSize);
 
 		// Move horizontally relative to the current x position.
-		void MoveX(const double& aDistance) { m_Position->m_X += aDistance; }
+		void MoveX(const double& aDistance);
 
 		// Move vertically relative to the current y position.
-		void MoveY(const double& aDistance) { m_Position->m_Y += aDistance; }
+		void MoveY(const double& aDistance);
 
 		// Move relative to the current position.
-		void Move(const double& aDistanceX, const double& aDistanceY) { m_Position->m_X += aDistanceX; m_Position->m_Y += aDistanceY; }
+		void Move(const double& aDistanceX, const double& aDistanceY);
 
 		// Move relative to the current position.
-		void Move(const SVector2<double>& aDistance) { m_Position->m_X += aDistance.m_X; m_Position->m_Y += aDistance.m_Y; }
+		void Move(const SVector2<double>& aDistance);
 	};
 }
 
