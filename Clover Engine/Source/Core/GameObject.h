@@ -39,6 +39,9 @@ namespace CloverEngine
 		// TODO: Finish implementing GameObject.
 		CGameObject();
 		virtual ~CGameObject();
+
+		// Gets this GameObject's transform component.
+		CTransform* GetTransform();
 	};
 }
 

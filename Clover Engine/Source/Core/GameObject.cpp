@@ -34,3 +34,8 @@ CGameObject::~CGameObject()
 	/* No need to delete the two individual pointers, already handled by the vector
 	and we're about to fall out of scope so no nullptr is needed. */
 }
+
+CTransform* CGameObject::GetTransform()
+{
+	return m_Transform;
+}

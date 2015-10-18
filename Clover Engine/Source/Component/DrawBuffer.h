@@ -13,6 +13,8 @@ Website:	http://charlottebrown.ca/
 #define __DRAWBUFFER_H
 
 #include "Source\Component\Component.h"
+#include "PDCurses\Include\curses.h"
+#include "Source\Math\MathTypes.h"
 
 namespace CloverEngine
 {
@@ -24,7 +26,11 @@ namespace CloverEngine
 	class CDrawBuffer : public CComponent
 	{
 	private:
-		// TODO: Implement DrawBuffer.
+		// This DrawBuffer's buffer window.
+		WINDOW* m_Buffer;
+
+		// The buffer's current width and height.
+		SVector2<int> m_Size;
 
 	public:
 		// All components know who their owner is.
@@ -38,6 +44,12 @@ namespace CloverEngine
 		of component that it is.
 		*/
 		virtual bool IsType(const int& aType) const;
+
+		// Clears the buffer and resets its size.
+		void RefreshBuffer();
+
+		// Gets the buffer's draw window, width, and height.
+		void GetBufferInfo(WINDOW* aWindow, int* aWidth, int* aHeight);
 	};
 }
 

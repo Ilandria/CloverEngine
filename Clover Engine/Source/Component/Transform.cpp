@@ -16,10 +16,10 @@ using namespace CloverEngine;
 CTransform::CTransform(CGameObject* aOwner) : CComponent(aOwner)
 {
 	// Initialize the two vectors.
-	m_Position.m_X = 0;
-	m_Position.m_Y = 0;
-	m_Size.m_X = 0;
-	m_Size.m_Y = 0;
+	m_Position.m_X = 0.0;
+	m_Position.m_Y = 0.0;
+	m_Size.m_X = 1.0;
+	m_Size.m_Y = 1.0;
 }
 
 CTransform::~CTransform()
