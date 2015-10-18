@@ -37,6 +37,9 @@
     <ClCompile Include="Source\Component\Transform.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Component\Component.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="pdcurses.dll" />

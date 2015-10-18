@@ -40,10 +40,10 @@ namespace CloverEngine
 
 	public:
 		// All components know who their owner is.
-		CComponent(CGameObject* aOwner) : m_Owner(aOwner) { }
+		CComponent(CGameObject* aOwner);
 
 		// Kill things here if things need to be killed.
-		virtual ~CComponent() { }
+		virtual ~CComponent();
 
 		/*
 		For any component you create, override this method and make it return true for every type
@@ -52,7 +52,7 @@ namespace CloverEngine
 		(inclusive) for its pre-defined component types. Use the EComponentTypes enumerator to
 		have easy reference to the engine's built-in types.
 		*/
-		virtual bool IsType(const int& aType) const { return aType == CE_ComponentType_Invalid; }
+		virtual bool IsType(const int& aType) const;
 	};
 }
 
