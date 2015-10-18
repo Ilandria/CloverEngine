@@ -57,6 +57,11 @@ void CDrawable::GetDrawInfo(WINDOW* aWindow, int* aWidth, int* aHeight)
 	*aHeight = m_Size.m_Y;
 }
 
+WINDOW* CDrawable::GetPDWindow()
+{
+	return m_Buffer;
+}
+
 void CDrawable::Erase()
 {
 	werase(m_Buffer);

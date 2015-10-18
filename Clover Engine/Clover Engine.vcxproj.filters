@@ -43,6 +43,9 @@
     <ClCompile Include="Source\Component\Drawable\Drawable.cpp">
       <Filter>Source\Component\Drawable</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Component\Drawable\SimpleSprite.cpp">
+      <Filter>Source\Component\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="pdcurses.dll" />
@@ -106,6 +109,9 @@
       <Filter>Source\Math</Filter>
     </ClInclude>
     <ClInclude Include="Source\Component\Drawable\Drawable.h">
+      <Filter>Source\Component\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Component\Drawable\SimpleSprite.h">
       <Filter>Source\Component\Drawable</Filter>
     </ClInclude>
   </ItemGroup>

@@ -157,6 +157,7 @@
     <ClCompile Include="Examples\Main.cpp" />
     <ClCompile Include="Source\Component\Component.cpp" />
     <ClCompile Include="Source\Component\Drawable\Drawable.cpp" />
+    <ClCompile Include="Source\Component\Drawable\SimpleSprite.cpp" />
     <ClCompile Include="Source\Component\Handler\DrawHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\KeyHandler.cpp" />
     <ClCompile Include="Source\Component\Handler\MouseHandler.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="PDCurses\Include\panel.h" />
     <ClInclude Include="Source\Component\Component.h" />
     <ClInclude Include="Source\Component\Drawable\Drawable.h" />
+    <ClInclude Include="Source\Component\Drawable\SimpleSprite.h" />
     <ClInclude Include="Source\Component\Handler\DrawHandler.h" />
     <ClInclude Include="Source\Component\Handler\KeyHandler.h" />
     <ClInclude Include="Source\Component\Handler\MouseHandler.h" />

@@ -53,6 +53,9 @@ namespace CloverEngine
 		// Gets the buffer's draw window, width, and height.
 		void GetDrawInfo(WINDOW* aWindow, int* aWidth, int* aHeight);
 
+		// Gets the buffer's pdcurses window.
+		WINDOW* GetPDWindow();
+
 		// Erases the buffer's contents, does not delete or resize the buffer.
 		void Erase();
 	};
